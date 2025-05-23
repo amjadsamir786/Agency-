@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aarv Medico - Gopalganj</title>
@@ -115,42 +117,49 @@
     <img src="logo.png" alt="Aarv Medico Logo">
     <h1>Aarv Medico</h1>
     <p><em>Powered by Medibyte (A division of Dr. Kumar's Pharmaceuticals)</em></p>
-  </header>  <section class="section">
+  </header>
+
+  <section class="section">
     <h2>About Us</h2>
     <p>Aarv Medico is committed to providing high-quality pharmaceutical products under Medibyte, a division of Dr. Kumar's Pharmaceuticals. Located in Jangaliya, Gopalganj, we aim to deliver reliable medicines and health support to our community.</p>
-  </section>  <section class="section products">
+  </section>
+
+  <section class="section products">
     <h2>Our Products</h2>
-    <input type="text" id="productSearch" placeholder="Search products..."><div class="product-item">
-  <img src="ilizip-c-cream.jpg" alt="Ilizip-C Cream">
-  <h3>Ilizip-C Cream</h3>
-  <p><strong>Composition:</strong> Itraconazole, Ofloxacin, Ornidazole & Clobetasol Propionate</p>
-  <p><strong>Price:</strong> ₹95</p>
-</div>
+    <input type="text" id="productSearch" placeholder="Search products...">
 
-<div class="product-item">
-  <img src="macito-sp.jpg" alt="Macito SP">
-  <h3>Macito-SP</h3>
-  <p><strong>Composition:</strong> Aceclofenac, Paracetamol & Serratiopeptidase</p>
-  <p><strong>Price:</strong> ₹87</p>
-</div>
+    <div class="product-item">
+      <img src="ilizip-c-cream.jpg" alt="Ilizip-C Cream">
+      <h3>Ilizip-C Cream</h3>
+      <p><strong>Composition:</strong> Itraconazole, Ofloxacin, Ornidazole & Clobetasol Propionate</p>
+      <p><strong>Price:</strong> ₹95</p>
+    </div>
 
-<div class="product-item">
-  <img src="panhod-dsr.jpg" alt="Panhod DSR">
-  <h3>Panhod DSR</h3>
-  <p><strong>Composition:</strong> Pantoprazole 40 mg & Domperidone 30 mg</p>
-  <p><strong>Price:</strong> ₹120</p>
-</div>
+    <div class="product-item">
+      <img src="macito-sp.jpg" alt="Macito SP">
+      <h3>Macito-SP</h3>
+      <p><strong>Composition:</strong> Aceclofenac, Paracetamol & Serratiopeptidase</p>
+      <p><strong>Price:</strong> ₹87</p>
+    </div>
 
-<div class="product-item">
-  <img src="alup-dsr.jpg" alt="Alup DSR">
-  <h3>Alup DSR</h3>
-  <p><strong>Composition:</strong> Rabeprazole Sodium & Domperidone SR</p>
-  <p><strong>Price:</strong> ₹95</p>
-</div>
+    <div class="product-item">
+      <img src="panhod-dsr.jpg" alt="Panhod DSR">
+      <h3>Panhod DSR</h3>
+      <p><strong>Composition:</strong> Pantoprazole 40 mg & Domperidone 30 mg</p>
+      <p><strong>Price:</strong> ₹120</p>
+    </div>
 
-  </section>  <section class="section">
+    <div class="product-item">
+      <img src="alup-dsr.jpg" alt="Alup DSR">
+      <h3>Alup DSR</h3>
+      <p><strong>Composition:</strong> Rabeprazole Sodium & Domperidone SR</p>
+      <p><strong>Price:</strong> ₹95</p>
+    </div>
+  </section>
+
+  <section class="section">
     <h2>Contact Us</h2>
-    <form name="contact" method="POST" data-netlify="true" action="/">
+    <form name="contact" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
@@ -162,18 +171,24 @@
     Phone: 9576917997, 7250187937<br>
     Address: Jangaliya, Gopalganj<br>
     <a href="https://www.facebook.com/share/1FcrjkfBpP/" target="_blank">Visit us on Facebook</a></p>
-  </section>  <section class="section legal">
+  </section>
+
+  <section class="section legal">
     <h2>Privacy Policy</h2>
     <p>We value your privacy. Your information submitted via our contact form will only be used to respond to your inquiries. We do not sell, trade, or rent your personal information to others.</p>
     <h2>Terms and Conditions</h2>
     <p>All content on this website is for informational purposes only. While we strive for accuracy, Aarv Medico and its partners are not liable for any errors or omissions. Use of this site is subject to acceptance of these terms. Product details may vary; always consult a medical professional before using any medication.</p>
-  </section>  <footer>
+  </section>
+
+  <footer>
     <p>&copy; 2025 Aarv Medico. All rights reserved. |
       <a href="#" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">Privacy Policy</a> |
       <a href="#" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">Terms & Conditions</a>
     </p>
-  </footer>  <script>
-    document.getElementById('productSearch').addEventListener('input', function() {
+  </footer>
+
+  <script>
+    document.getElementById('productSearch').addEventListener('input', function () {
       const filter = this.value.toLowerCase();
       const products = document.querySelectorAll('.product-item');
       products.forEach(product => {
@@ -181,5 +196,6 @@
         product.style.display = text.includes(filter) ? 'block' : 'none';
       });
     });
-  </script></body>
+  </script>
+</body>
 </html>
